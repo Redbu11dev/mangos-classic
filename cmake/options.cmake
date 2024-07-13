@@ -6,11 +6,11 @@ option(BUILD_GAME_SERVER                    "Build game server"                 
 option(BUILD_LOGIN_SERVER                   "Build login server"                        ON)
 option(BUILD_EXTRACTORS                     "Build map/dbc/vmap/mmap extractors"        OFF)
 option(BUILD_SCRIPTDEV                      "Build ScriptDev. (OFF Speedup build)"      ON)
-option(BUILD_PLAYERBOTS                     "Build Playerbots mod"                      OFF)
-option(BUILD_AHBOT                          "Build Auction House Bot mod"               OFF)
+option(BUILD_PLAYERBOTS                     "Build Playerbots mod"                      ON)
+option(BUILD_AHBOT                          "Build Auction House Bot mod"               ON)
 
 # Modules
-option(BUILD_MODULES                        "Build module system"                       OFF)
+option(BUILD_MODULES                        "Build module system"                       ON)
 foreach(MODULE_NAME ${MODULE_NAMES})
   if(NOT ${MODULE_NAME} STREQUAL "MODULES")
     string(TOLOWER ${MODULE_NAME} LOWER_MODULE_NAME)
