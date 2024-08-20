@@ -10,7 +10,7 @@ option(BUILD_PLAYERBOTS                     "Build Playerbots mod"              
 option(BUILD_AHBOT                          "Build Auction House Bot mod"               ON)
 
 # Modules
-option(BUILD_MODULES                        "Build module system"                       ON)
+option(BUILD_MODULES                        "Build module system"                       OFF)
 foreach(MODULE_NAME ${MODULE_NAMES})
   if(NOT ${MODULE_NAME} STREQUAL "MODULES")
     string(TOLOWER ${MODULE_NAME} LOWER_MODULE_NAME)
